@@ -21,8 +21,8 @@ connection
 
 
 //Rotas    
-//Rotas dados das Calhas//
-app.get("/dados/calhas",(req,res) => {
+//Rotas dados das Calhas// dados/calhas
+app.get("/",(req,res) => {
     precocalhas.findAll({
         raw: true,    //Aqui estou listando os dados da tabela pergunta,Obs:o comando "{raw:true}" serve para listar apenas o dados importantes.
         order:[['id','ASC']]     //observer que o comando"order:[['id','des']]" serve para ordenar a listagem dos itens,obs:ASC= crescente || DESC = decrecente.
